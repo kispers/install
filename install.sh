@@ -49,7 +49,7 @@ install_xrayr() {
 
 install_aapanel() {
     green ">>> 安装宝塔国际版 aaPanel..."
-    curl -sSO https://www.aapanel.com/script/install_ubuntu.sh
+    wget -O install.sh http://www.aapanel.com/script/install-ubuntu-en.sh && sudo bash install.sh
     bash install_ubuntu.sh
     AAPANEL_INSTALLED=1
 }
