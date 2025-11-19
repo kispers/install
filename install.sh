@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ubuntu 一键安装脚本：系统更新 + BBR + XrayR + 宝塔国际版 + Docker + 流媒体测试 + 三网回程
-
+# 作者: JackLin
 # 适用于 Ubuntu 18.04/20.04/22.04/24.04
 
 set -e
