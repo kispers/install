@@ -33,11 +33,7 @@ set_timezone() {
 
 enable_bbr() {
     green ">>> 开启 BBR 加速..."
-    cat > /etc/sysctl.d/99-bbr.conf <<EOF
-net.core.default_qdisc=fq
-net.ipv4.tcp_congestion_control=bbr
-EOF
-    sysctl --system
+    wget -N --no-check-certificate "https://gist.github.com/zeruns/a0ec603f20d1b86de6a774a8ba27588f/raw/4f9957ae23f5efb2bb7c57a198ae2cffebfb1c56/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
     BBR_ENABLED=1
 }
 
